@@ -2,7 +2,7 @@ import SwiftUI
 import Combine
 
 public struct Magnet: View {
-    @State private var balls: [Ball] = []
+    @State private var balls: [Ball2] = []
     @State private var magnetPosition: CGPoint = .zero
     @State private var isDraggingMagnet = false
     
@@ -54,7 +54,7 @@ public struct Magnet: View {
     }
     
     private func creatBall(position: CGPoint) {
-        balls.append(Ball(position: position))
+        balls.append(Ball2(position: position))
     }
     
     private func updateBallsPosition() {
@@ -77,7 +77,7 @@ public struct Magnet: View {
     }
 }
 
-struct Ball: Identifiable {
+struct Ball2: Identifiable {
     let id = UUID()
     var position: CGPoint
 }

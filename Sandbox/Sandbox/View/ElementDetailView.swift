@@ -5,9 +5,7 @@ struct ElementDetailView: View {
 
     var body: some View {
         VStack {
-            Text(viewModel.element.name)
             viewModel.element.view
-            // Добавьте другие подробности о вашем элементе
         }
         .navigationTitle(viewModel.element.name)
     }

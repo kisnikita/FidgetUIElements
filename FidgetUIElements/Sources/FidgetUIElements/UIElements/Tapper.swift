@@ -109,9 +109,3 @@ public struct ConfettiPiece: View {
         rotation = Angle(degrees: .random(in: 0...360))
     }
 }
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        Tapper()
-    }
-}

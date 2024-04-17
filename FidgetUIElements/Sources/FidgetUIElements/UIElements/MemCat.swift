@@ -38,9 +38,3 @@ public struct MemCat: View {
         }
     }
 }
-
-struct CatPreview: PreviewProvider {
-    static var previews: some View {
-        MemCat()
-    }
-}
